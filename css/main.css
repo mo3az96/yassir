@@ -410,10 +410,10 @@ html[dir="ltr"] .header-tool {
 
 @media (max-width: 1199px) {
   html[dir="rtl"] .header-tool {
-    margin-left: 15px;
+    margin-left: 25px;
   }
   html[dir="ltr"] .header-tool {
-    margin-right: 15px;
+    margin-right: 25px;
   }
   .header-tool i {
     display: block;
@@ -1097,6 +1097,9 @@ html[dir="ltr"] .state-item ~ .state-item {
   .feat-item {
     max-width: 270px;
     margin: 30px auto;
+    background-color: #fff;
+    -webkit-box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.07);
+            box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.07);
   }
 }
 
