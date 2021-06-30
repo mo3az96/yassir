@@ -125,6 +125,7 @@ $(document).ready(function () {
         $('.menu-btn').click(function () {
             $("nav").slideToggle(500);
             $("body").toggleClass("overflow");
+            $(".lang-cont").fadeToggle(500);
             $(this).toggleClass("active");
         });
     }
