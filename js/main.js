@@ -120,7 +120,7 @@ $(document).ready(function () {
         });
     }
     //////////** Menu **//////////
-    if ($(window).width() <= 991) {
+    if ($(window).width() <= 1199) {
         $('.menu-btn').click(function () {
             $("nav").slideToggle(500);
             $("body").toggleClass("overflow");
