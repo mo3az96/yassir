@@ -151,6 +151,10 @@ input[type=number] {
   outline: none !important;
 }
 
+.overflow {
+  overflow: hidden !important;
+}
+
 @media (min-width: 1300px) {
   .container {
     max-width: 1200px;
@@ -654,7 +658,7 @@ header.header-scroll .logo {
   }
   .header-tool {
     font-size: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
   }
   html[dir="rtl"] .header-tool {
     margin-left: 0;
