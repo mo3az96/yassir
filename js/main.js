@@ -120,7 +120,6 @@ $(document).ready(function () {
         });
     }
     //////////** Menu **//////////
-
     if ($(window).width() <= 991) {
         $('.menu-btn').click(function () {
             $("nav").slideToggle(500);
@@ -129,6 +128,15 @@ $(document).ready(function () {
             $(this).toggleClass("active");
         });
     }
+    //////////** arrow top **//////////
+    $(window).scroll(function () {
+        $(this).scrollTop() >= 500 ? $(".arrow-top").fadeIn(500) : $(".arrow-top").fadeOut(500);
+    });
+    $(".arrow-top").click(function () {
+        $("html,body").animate({
+            scrollTop: 0
+        }, 1500);
+    });
     lazyLoad();
 });
 

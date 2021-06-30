@@ -1727,4 +1727,63 @@ footer {
   color: var(--secondery-color);
   margin-top: 35px;
 }
+
+.arrow-top {
+  position: fixed;
+  bottom: 80px;
+  z-index: 9;
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .arrow-top {
+    bottom: 40px;
+  }
+}
+
+html[dir='rtl'] .arrow-top {
+  left: 50px;
+}
+
+@media (max-width: 767px) {
+  html[dir='rtl'] .arrow-top {
+    left: 20px;
+  }
+}
+
+html[dir='ltr'] .arrow-top {
+  right: 50px;
+}
+
+@media (max-width: 767px) {
+  html[dir='ltr'] .arrow-top {
+    right: 20px;
+  }
+}
+
+.arrow-top span {
+  font-size: 16px;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  background-color: rgba(var(--secondery-rgb), 0.5);
+  border-radius: 50%;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.arrow-top span:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+}
 /*# sourceMappingURL=main.css.map */
